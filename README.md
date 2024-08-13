@@ -1,13 +1,12 @@
 ### CHED_NER 数据集描述
 
-CHED_NER 数据集是从古汉语历史事件检测数据集 (CHED) 中提取的一个子集，将事件检测任务建模为序列标注任务，专门用于命名实体识别 (NER) 任务。该数据集采用 BIO（Begin, Inside, Outside）格式，其中每个词被标注为事件触发词（B-标签）、触发词的一部分（I-标签），或者非事件相关的词（O）。这种格式非常适合用于序列标注模型的训练和评估。
+CHED_NER 数据集是古汉语历史事件检测数据集 (CHED) 转换格式后的子集，将事件检测任务建模为序列标注任务，专门用于命名实体识别 (NER) 任务。该数据集采用 BIO（Begin, Inside, Outside）格式，其中每个词被标注为事件触发词（B-标签）、触发词的一部分（I-标签），或者非事件相关的词（O）。这种格式非常适合用于序列标注模型的训练和评估。
 
 ### 数据集结构
 
 - **train.txt**: 包含训练数据，格式为 BIO 词汇分类格式。每行表示一个词汇及其对应的标签（B、I 或 O）。
 - **dev.txt**: 包含开发/验证数据，用于在训练过程中调整和验证模型性能。
 - **test.txt**: 包含测试数据，用于评估最终模型的性能。
-- **README.md**: 提供数据集结构、标注指南和使用说明的详细解释。
 
 ### 数据集格式示例
 
@@ -64,14 +63,13 @@ CHED_NER 数据集主要用于训练和评估基于序列标注的事件检测�
 
 ### CHED_NER Dataset Description
 
-The CHED_NER dataset is a subset extracted from the Classical Chinese Historical Event Dataset (CHED), modeling the event detection task as a sequence labeling task, specifically for Named Entity Recognition (NER) tasks. The dataset follows the BIO (Begin, Inside, Outside) format, where each token is labeled as an event trigger (B-label), part of a trigger (I-label), or a non-event-related word (O). This format is ideal for training and evaluating sequence labeling models.
+The CHED_NER dataset is a subset of the Classical Chinese Historical Event Detection (CHED) dataset, reformatted for named entity recognition (NER). It models the event detection task as a sequence labeling problem, using the BIO (Begin, Inside, Outside) format. Each word is tagged as an event trigger word (B-tag), part of a trigger word (I-tag), or non-event-related (O). This format is well-suited for training and evaluating sequence labeling models.
 
 ### Dataset Structure
 
 - **train.txt**: Contains the training data in BIO token classification format. Each line represents a token and its corresponding label (B, I, or O).
 - **dev.txt**: Contains the development/validation data used for tuning and validating model performance during training.
 - **test.txt**: Contains the test data used for evaluating the final model's performance.
-- **README.md**: Provides a detailed explanation of the dataset structure, annotation guidelines, and usage instructions.
 
 ### Example Format
 
